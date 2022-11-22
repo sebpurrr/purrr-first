@@ -1,0 +1,24 @@
+{
+  "name": "purrr-first",
+  "version": "1.0.0",
+  "description": "First Frontpage for Purrr.social. Will be ditched later",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebpurrr/purrr-first.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebpurrr/purrr-first/issues"
+  },
+  "homepage": "https://github.com/sebpurrr/purrr-first#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
