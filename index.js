@@ -1,8 +1,14 @@
 const express = require('express');
-const path = require('path');
 
+const path = require('path');
 const app = express();
+
 const port = process.env.PORT || '3000';
+// Submit form stuff
+var bodyParser = require('body-parser')
+var urlencodedParser = bodyParser.urlencoded( {extended: false})
+
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -17,6 +23,11 @@ app.get('/', (req, res) => {
       subText: `If you're interested in contributing, drop your mail down below<br>brought to you by busy pets`
     }
     );
+});
+
+app.post('/', urlencodedParser, (req, res) => {
+  console.log('Mail optained:', req.body);
+  res.sendStatus(200);
 });
 
 app.listen(port, () => {
