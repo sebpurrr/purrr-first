@@ -15,8 +15,12 @@ app.get('/', (req, res) => {
     { 
       title: 'Coming Soon!', 
       mainText: `Purrr.social`,
-      secondHeader: `How many techs do you need to run Twitter?`,
-      subText: `If you're interested in contributing, drop your mail down below<br>brought to you by busy pets`
+      secondHeader: `How many techs do you need<br>to run Twitter?`,
+      subText: `Since Elon Musk took over the platform and drained the majority of the workforce,<br>
+      this question came up multiple times. let’s try this out. Send a message via Twitter, GitHub or Mail below.<br>
+      <br>Currently needed:<br>
+      - Frontend programming<br>
+      - Backend programming`
     }
     );
 });

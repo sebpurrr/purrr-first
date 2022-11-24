@@ -284,11 +284,11 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 5em;
   line-height: 1.25em; }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 3.5em;
   line-height: 1.5em; }
 
 h3 {
@@ -355,7 +355,7 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.775);
   position: relative;
   margin: 0 0 1.5em 0; }
 
@@ -833,6 +833,54 @@ button,
         line-height: inherit;
         margin-top: 0;
         position: absolute; } }
+
+/* Contact Me */
+#contact {
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  bottom: 4em;
+  color: rgba(255, 255, 255, 0.5);
+  left: 4em;
+  /* opacity: 0.9; */
+  display: flex;
+  position: static; }
+  #contact .icons {
+    margin: 1em 0 0 0;
+    font-size:5em;
+  }
+  #contact:hover {
+    opacity: 1; }
+  #contact > :last-child {
+    margin-bottom: 0; }
+  @media screen and (max-width: 1680px) {
+    #contact {
+      bottom: 3.5em;
+      left: 3.5em; } }
+  @media screen and (max-width: 736px) {
+    #contact {
+      bottom: 2em;
+      left: 2em; }
+    #contact .icons {
+      margin: 1em 0 0 0;
+      font-size:2em;
+     }
+    }
+  @media screen and (max-width: 360px) {
+    #contact {
+      bottom: 1.25em;
+      left: 1.25em; }
+      #contact .icons {
+        margin: 1em 0 0 0;
+        font-size:2em;
+       } }
+  @media screen and (max-height: 640px) {
+    #contact {
+      bottom: auto;
+      left: auto;
+      margin: 1em 0 0 0;
+      position: relative; } }
 
 /* Footer */
 #footer {
