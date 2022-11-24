@@ -14,7 +14,8 @@ app.get('/', (req, res) => {
     'index', 
     { 
       title: 'Coming Soon!', 
-      mainText: 'Purrr.social', 
+      mainText: `Purrr.social`,
+      secondHeader: `How many techs do you need to run Twitter?`,
       subText: `If you're interested in contributing, drop your mail down below<br>brought to you by busy pets`
     }
     );
